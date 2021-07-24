@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GPLUnitTesting</name>
+    </assembly>
+    <members>
+        <member name="M:GPLUnitTesting.CircleTest.TestCircle">
+            <summary>
+            Method to test the circle while providing manual parameters which checks it with our main program
+            </summary>
+        </member>
+        <member name="M:GPLUnitTesting.RectangleTest.TestRect">
+            <summary>
+            Method to test rectangle while providing manaul params like x,y axis along with height and width and checking it with main program
+            </summary>
+        </member>
+        <member name="M:GPLUnitTesting.TriangleTest.TestTriangle">
+            <summary>
+            Test method of triangle shape
+            </summary>
+        </member>
+    </members>
+</doc>

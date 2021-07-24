@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GPLApp</name>
+    </assembly>
+    <members>
+        <member name="T:GPLApp.Circle">
+            <summary>
+            Holds the program commands of circle
+            </summary>
+        </member>
+        <member name="F:GPLApp.Circle.x">
+            <summary>
+            Getting values of x, y position and radius of cirlce
+            </summary>
+        </member>
+        <member name="F:GPLApp.Circle.y">
+            <summary>
+            Getting values of x, y position and radius of cirlce
+            </summary>
+        </member>
+        <member name="F:GPLApp.Circle.radius">
+            <summary>
+            Getting values of x, y position and radius of cirlce
+            </summary>
+        </member>
+        <member name="M:GPLApp.Circle.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Used to pass the value of position x,y and radius for circle
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="radius"></param>
+        </member>
+        <member name="M:GPLApp.Circle.Draw(System.Drawing.Graphics)">
+            <summary>
+            Method to draw the circle in panelbox
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:GPLApp.Circle.Set(System.Int32[])">
+            <summary>
+            Method for setting value of position x,y and radius of circle
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="T:GPLApp.Creator">
+            <summary>
+            Abstract class declared to get shapetype
+            </summary>
+        </member>
+        <member name="M:GPLApp.Creator.getShape(System.String)">
+            <summary>
+            Method used to pass the shape of object to be drawn
+            </summary>
+            <param name="ShapeType">Parameter of shape object</param>
+            <returns></returns>
+        </member>
+        <member name="T:GPLApp.Factory">
+            <summary>
+            Class declared and inherit Creator class
+            </summary>
+        </member>
+        <member name="M:GPLApp.Factory.getShape(System.String)">
+            <summary>
+            Checking the shape type and returning it
+            </summary>
+            <param name="ShapeType">Shape parameter</param>
+            <returns>Shape type of the object</returns>
+        </member>
+        <member name="T:GPLApp.MainForm">
+            <summary>
+            Main form class of the application
+            </summary>
+        </member>
+        <member name="M:GPLApp.MainForm.txt_Exec_Cmd_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            This takes the execution command for application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.loadCommand">
+            <summary>
+            This method loads the command and calls RunCommand further
+            </summary>
+        </member>
+        <member name="M:GPLApp.MainForm.RunCommand(System.String)">
+            <summary>
+            This method runs the program and further calls the draw command to finally draw object in panel
+            </summary>
+            <param name="oneLineCommand"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.GetSize(System.String)">
+            <summary>
+            This method returns the size of structure
+            </summary>
+            <param name="lineCommand"></param>
+            <returns>the value of the size</returns>
+        </member>
+        <member name="M:GPLApp.MainForm.sendDrawCommand(System.String)">
+            <summary>
+            Initiate shape and finally draw it in user passed command
+            </summary>
+            <param name="lineOfCommand"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.GetIfStartLineNumber">
+            <summary>
+            initiates the if statement
+            </summary>
+            <returns>lineNum</returns>
+        </member>
+        <member name="M:GPLApp.MainForm.GetEndifEndLineNumber">
+            <summary>
+            ends the endif statement in program
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GPLApp.MainForm.GetLoopStartLineNumber">
+            <summary>
+            initiatess the for loop in program
+            </summary>
+            <returns>lineNum</returns>
+        </member>
+        <member name="M:GPLApp.MainForm.GetLoopEndLineNumber">
+            <summary>
+            ends the forloop in program
+            </summary>
+            <returns>lineNum</returns>
+        </member>
+        <member name="M:GPLApp.MainForm.saveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method is to save the program in user local computer for future access
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.DrawRectangle(System.Int32,System.Int32)">
+            <summary>
+            This method is used to draw rectangle
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.DrawCircle(System.Int32)">
+            <summary>
+            Method used while drawing circle
+            </summary>
+            <param name="radius"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.DrawTriangle(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Method to draw triangle in panelbox
+            </summary>
+            <param name="rBase"></param>
+            <param name="adj"></param>
+            <param name="hyp"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.browseToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Method to import the program from user local program
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.helpToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Method to open the pdf file from user's computer for guideline in application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.closeToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Closes the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.moveTo(System.Int32,System.Int32)">
+            <summary>
+            Helps to position the shape in panelbox
+            </summary>
+            <param name="toX"></param>
+            <param name="toY"></param>
+        </member>
+        <member name="M:GPLApp.MainForm.drawTo(System.Int32,System.Int32)">
+            <summary>
+            Helps to draw the shape in panelbox
+            </summary>
+            <param name="toX"></param>
+            <param name="toY"></param>
+        </member>
+        <member name="F:GPLApp.MainForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:GPLApp.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:GPLApp.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:GPLApp.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:GPLApp.ProgramValidation">
+            <summary>
+            Classs which validates the user input and gives proper error response
+            </summary>
+        </member>
+        <member name="M:GPLApp.ProgramValidation.checkLoopAndIfValidation">
+            <summary>
+            This method validates loop and if endif statement in program
+            </summary>
+        </member>
+        <member name="M:GPLApp.ProgramValidation.checkLineValidation(System.String)">
+            <summary>
+            This method checks the line command in program like moveto,drawto etc.
+            </summary>
+            <param name="lineOfCommand"></param>
+        </member>
+        <member name="M:GPLApp.ProgramValidation.checkIfVariableDefined(System.String)">
+            <summary>
+            Check whether the variable has been defined in the program or not
+            </summary>
+            <param name="variable"></param>
+        </member>
+        <member name="T:GPLApp.Rectangle">
+            <summary>
+            Class is defined as rectangle which inherits from ShapesInterface
+            </summary>
+        </member>
+        <member name="F:GPLApp.Rectangle.x">
+            <summary>
+            The value of x and y axis in panelbox with height and width of rectangle to be drawn
+            </summary>
+        </member>
+        <member name="F:GPLApp.Rectangle.y">
+            <summary>
+            The value of x and y axis in panelbox with height and width of rectangle to be drawn
+            </summary>
+        </member>
+        <member name="F:GPLApp.Rectangle.width">
+            <summary>
+            The value of x and y axis in panelbox with height and width of rectangle to be drawn
+            </summary>
+        </member>
+        <member name="F:GPLApp.Rectangle.height">
+            <summary>
+            The value of x and y axis in panelbox with height and width of rectangle to be drawn
+            </summary>
+        </member>
+        <member name="M:GPLApp.Rectangle.#ctor">
+            <summary>
+            provides width and height of rectangle
+            </summary>
+        </member>
+        <member name="M:GPLApp.Rectangle.Draw(System.Drawing.Graphics)">
+            <summary>
+            method used to draw the shape in panelbox
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:GPLApp.Rectangle.Set(System.Int32[])">
+            <summary>
+            Method which sets the value of x, y axis along with height and width of rectangle
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:GPLApp.Shape.Draw(System.Drawing.Graphics)">
+            <summary>
+            Method which will be inherited by shapes classes to draw object 
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:GPLApp.Shape.Set(System.Int32[])">
+            <summary>
+            sets the value of x,y axis along with height and width
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:GPLApp.ShapesInterface.Set(System.Int32[])">
+            <summary>
+            Interface method to set parameter value
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:GPLApp.ShapesInterface.Draw(System.Drawing.Graphics)">
+            <summary>
+            Interface method to be inherited by Shapes class and draw the object in panelbox
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="F:GPLApp.Triangle.xi1">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.yi1">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.xi2">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.yi2">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.xii1">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.yii1">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.xii2">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.yii2">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.xiii1">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.yiii1">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.xiii2">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="F:GPLApp.Triangle.yiii2">
+            <summary>
+            Triangle sides
+            </summary>
+        </member>
+        <member name="M:GPLApp.Triangle.Draw(System.Drawing.Graphics)">
+            <summary>
+            Method to draw triangle in panelbox
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:GPLApp.Triangle.Set(System.Int32[])">
+            <summary>
+            Method which takes all the axis points and sets its value
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="T:GPLApp.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:GPLApp.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:GPLApp.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
