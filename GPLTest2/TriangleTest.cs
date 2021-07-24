@@ -1,7 +1,12 @@
 ﻿using GPLApp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace GPLUnitTesting
+namespace GPLTest2
 {
     [TestClass]
     public class TriangleTest
@@ -16,7 +21,7 @@ namespace GPLUnitTesting
             int xi1 = 100, yi1 = 200, xi2 = 200, yi2 = 200, xii1 = 200, yii1 = 200, xii2 = 200,
                   yii2 = 200, xiii1 = 200, yiii1 = 200, xiii2 = 200, yiii2 = 200;
             r.Set(xi1, yi1, xi2, yi2, xii1, yii1, xii2, yii2, xiii1, yiii1, xiii2, yiii2);
-            Assert.AreEqual(80, r.xi1); //Assert.AreEqual(expected,actual)
+            Assert.AreEqual(100, r.xi1); //Assert.AreEqual(expected,actual)
         }
     }
 }

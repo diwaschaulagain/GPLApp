@@ -1,7 +1,12 @@
 ﻿using GPLApp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace GPLUnitTesting
+namespace GPLTest2
 {
     [TestClass]
     public class RectangleTest

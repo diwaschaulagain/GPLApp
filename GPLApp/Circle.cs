@@ -33,27 +33,27 @@ namespace GPLApp
         /// Method to draw the circle in panelbox
         /// </summary>
         /// <param name="g"></param>
-       //public void Draw(Graphics g)
-       // {
-       //     try
-       //     {
-       //         Pen p = new Pen(Color.Black, 2);
-       //         g.DrawEllipse(p, x - radius, y - radius, radius * 2, radius * 2);
-       //     }
-       //     catch (Exception ex)
-       //     {
+        public void Draw(Graphics g)
+        {
+            try
+            {
+                Pen p = new Pen(Color.Black, 2);
+                g.DrawEllipse(p, x - radius, y - radius, radius * 2, radius * 2);
+            }
+            catch (Exception ex)
+            {
 
-       //         //throw ex;
-       //         MessageBox.Show("Error: " + ex.Message);
-       //     }
-       // }
+                //throw ex;
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
 
 
         /// <summary>
         /// Method for setting value of position x,y and radius of circle
         /// </summary>
         /// <param name="list"></param>
-       public void Set(params int[] list)
+        public void Set(params int[] list)
         {
             try
             {

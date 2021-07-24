@@ -16,21 +16,21 @@ namespace GPLApp
         /// Method to draw triangle in panelbox
         /// </summary>
         /// <param name="g"></param>
-        //public void Draw(Graphics g)
-        //{
-        //    try
-        //    {
-        //        Pen p = new Pen(Color.Black, 2);
-        //        g.DrawLine(p, xi1, yi1, xi2, yi2);
-        //        g.DrawLine(p, xii1, yii1, xii2, yii2);
-        //        g.DrawLine(p, xiii1, yiii1, xiii2, yiii2);
-        //    }
-        //    catch (Exception ex)
-        //    {
+        public void Draw(Graphics g)
+        {
+            try
+            {
+                Pen p = new Pen(Color.Black, 2);
+                g.DrawLine(p, xi1, yi1, xi2, yi2);
+                g.DrawLine(p, xii1, yii1, xii2, yii2);
+                g.DrawLine(p, xiii1, yiii1, xiii2, yiii2);
+            }
+            catch (Exception ex)
+            {
 
-        //        MessageBox.Show("Error: " + ex.Message);
-        //    }
-        //}
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
 
 
         /// <summary>

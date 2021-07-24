@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPLApp", "GPLApp\GPLApp.csproj", "{47C8EAAB-1514-43D7-8EEB-D58D29881FF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPLUnitTesting", "GPLUnitTesting\GPLUnitTesting.csproj", "{23D0B921-7D66-471D-BF6F-89CEE610E16F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPLTest2", "GPLTest2\GPLTest2.csproj", "{4F32B883-F160-498A-ABE3-924FABF5ADFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{47C8EAAB-1514-43D7-8EEB-D58D29881FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C8EAAB-1514-43D7-8EEB-D58D29881FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C8EAAB-1514-43D7-8EEB-D58D29881FF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23D0B921-7D66-471D-BF6F-89CEE610E16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23D0B921-7D66-471D-BF6F-89CEE610E16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23D0B921-7D66-471D-BF6F-89CEE610E16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23D0B921-7D66-471D-BF6F-89CEE610E16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F32B883-F160-498A-ABE3-924FABF5ADFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F32B883-F160-498A-ABE3-924FABF5ADFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F32B883-F160-498A-ABE3-924FABF5ADFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F32B883-F160-498A-ABE3-924FABF5ADFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

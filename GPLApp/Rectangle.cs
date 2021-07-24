@@ -35,26 +35,26 @@ namespace GPLApp
         /// method used to draw the shape in panelbox
         /// </summary>
         /// <param name="g"></param>
-        //public void Draw(Graphics g)
-        //{
-        //    try
-        //    {
-        //        Pen p = new Pen(Color.Black, 2);
-        //        g.DrawRectangle(p, x - (width / 2), y - (height / 2), width * 2, height * 2);
-        //    }
-        //    catch (Exception ex)
-        //    {
+        public void Draw(Graphics g)
+        {
+            try
+            {
+                Pen p = new Pen(Color.Black, 2);
+                g.DrawRectangle(p, x - (width / 2), y - (height / 2), width * 2, height * 2);
+            }
+            catch (Exception ex)
+            {
 
-        //        MessageBox.Show("Error: " + ex.Message);
-        //    }
-        //}
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
 
 
         /// <summary>
         /// Method which sets the value of x, y axis along with height and width of rectangle
         /// </summary>
         /// <param name="list"></param>
-       public void Set(params int[] list)
+        public void Set(params int[] list)
         {
             try
             {
